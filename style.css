@@ -57,11 +57,29 @@ body {
     width: 100%;
 }
 
+.form-control.success input {
+    border-color: lightblue;
+}
+
+.form-control.error input {
+    border-color: rgb(198, 59, 59);
+}
+
 .form-control i {
     position: absolute;
-    top: 40px;
+    top: 35px;
     right: 10px;
     visibility: hidden;
+}
+
+.form-control.success i.fa-check-circle {
+    color: lightblue;
+    visibility: visible;
+}
+
+.form-control.error i.fa-exclamation-circle {
+    color: red;
+    visibility: visible;
 }
 
 .form-control small {
@@ -69,6 +87,12 @@ body {
     visibility: hidden;
     bottom: 0;
     left: 0;
+}
+
+.form-control.error small {
+    color: red;
+    visibility: visible;
+    margin-left: 30px;
 }
 
 .form button {
